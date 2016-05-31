@@ -7,8 +7,14 @@
 //
 
 #import "ViewController.h"
+#import "LTZLocalizationKit.h"
+
+#define CHINESE @"zh-Hans"
+#define ENGLISH @"en"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UIButton *changeButton;
 
 @end
 
@@ -17,11 +23,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.title = LTZLocalizedStringFromTable(@"title", @"Main", nil);
+    [self.changeButton setTitle: LTZLocalizedStringFromTable(@"btn_title", @"Main", nil) forState:UIControlStateNormal];
+    [self.changeButton setTitle: LTZLocalizedStringFromTable(@"btn_title", @"Main", nil) forState:UIControlStateHighlighted];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)changedLocationString:(id)sender
+{
+    if ([[LTZLocalizationManager language] isEqualToString:CHINESE]) {
+        [LTZLocalizationManager setLanguage:ENGLISH];
+    }else{
+        [LTZLocalizationManager setLanguage:CHINESE];
+    }
+    
+    
+    self.title = LTZLocalizedStringFromTable(@"title", @"Main", nil);
+    [self.changeButton setTitle: LTZLocalizedStringFromTable(@"btn_title", @"Main", nil) forState:UIControlStateNormal];
+    [self.changeButton setTitle: LTZLocalizedStringFromTable(@"btn_title", @"Main", nil) forState:UIControlStateHighlighted];
 }
 
 @end

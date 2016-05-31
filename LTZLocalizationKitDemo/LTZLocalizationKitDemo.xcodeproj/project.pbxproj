@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7BD57B21CFC4DF2008F2D69 /* LTZLocalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BD57B01CFC4DF2008F2D69 /* LTZLocalizationManager.m */; };
+		E7BD57BB1CFD7D64008F2D69 /* NSObject+localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BD57BA1CFD7D64008F2D69 /* NSObject+localization.m */; };
 		E7E8A3671CFC4AEB002A381A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E8A3661CFC4AEB002A381A /* main.m */; };
 		E7E8A36A1CFC4AEB002A381A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E8A3691CFC4AEB002A381A /* AppDelegate.m */; };
 		E7E8A36D1CFC4AEB002A381A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E8A36C1CFC4AEB002A381A /* ViewController.m */; };
@@ -14,10 +16,19 @@
 		E7E8A3731CFC4AEB002A381A /* LTZLocalizationKitDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E7E8A3711CFC4AEB002A381A /* LTZLocalizationKitDemo.xcdatamodeld */; };
 		E7E8A3751CFC4AEB002A381A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7E8A3741CFC4AEB002A381A /* Assets.xcassets */; };
 		E7E8A3781CFC4AEB002A381A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7E8A3761CFC4AEB002A381A /* LaunchScreen.storyboard */; };
-		E7E8A3841CFC4CE2002A381A /* LTZLocalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E8A3831CFC4CE2002A381A /* LTZLocalizationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E7BD57AE1CFC4DF2008F2D69 /* LTZLocalizationKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTZLocalizationKit.h; sourceTree = "<group>"; };
+		E7BD57AF1CFC4DF2008F2D69 /* LTZLocalizationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTZLocalizationManager.h; sourceTree = "<group>"; };
+		E7BD57B01CFC4DF2008F2D69 /* LTZLocalizationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTZLocalizationManager.m; sourceTree = "<group>"; };
+		E7BD57B31CFC5310008F2D69 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		E7BD57B41CFC5310008F2D69 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		E7BD57B51CFC5317008F2D69 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		E7BD57B61CFC5317008F2D69 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		E7BD57B81CFC60CB008F2D69 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		E7BD57B91CFD7D64008F2D69 /* NSObject+localization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+localization.h"; sourceTree = "<group>"; };
+		E7BD57BA1CFD7D64008F2D69 /* NSObject+localization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+localization.m"; sourceTree = "<group>"; };
 		E7E8A3621CFC4AEB002A381A /* LTZLocalizationKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LTZLocalizationKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7E8A3661CFC4AEB002A381A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E7E8A3681CFC4AEB002A381A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -29,9 +40,6 @@
 		E7E8A3741CFC4AEB002A381A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7E8A3771CFC4AEB002A381A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7E8A3791CFC4AEB002A381A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E7E8A3811CFC4C91002A381A /* LTZLocalizationKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTZLocalizationKit.h; sourceTree = "<group>"; };
-		E7E8A3821CFC4CE2002A381A /* LTZLocalizationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTZLocalizationManager.h; sourceTree = "<group>"; };
-		E7E8A3831CFC4CE2002A381A /* LTZLocalizationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTZLocalizationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,11 +53,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E7BD57AD1CFC4DF2008F2D69 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E7BD57AE1CFC4DF2008F2D69 /* LTZLocalizationKit.h */,
+				E7BD57AF1CFC4DF2008F2D69 /* LTZLocalizationManager.h */,
+				E7BD57B01CFC4DF2008F2D69 /* LTZLocalizationManager.m */,
+				E7BD57B91CFD7D64008F2D69 /* NSObject+localization.h */,
+				E7BD57BA1CFD7D64008F2D69 /* NSObject+localization.m */,
+			);
+			name = Classes;
+			path = ../Classes;
+			sourceTree = "<group>";
+		};
+		E7BD57B11CFC4DF2008F2D69 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Assets;
+			path = ../Assets;
+			sourceTree = "<group>";
+		};
 		E7E8A3591CFC4AEB002A381A = {
 			isa = PBXGroup;
 			children = (
-				E7E8A3801CFC4B67002A381A /* Assets */,
-				E7E8A37F1CFC4B61002A381A /* Classes */,
+				E7BD57AD1CFC4DF2008F2D69 /* Classes */,
+				E7BD57B11CFC4DF2008F2D69 /* Assets */,
 				E7E8A3641CFC4AEB002A381A /* LTZLocalizationKitDemo */,
 				E7E8A3631CFC4AEB002A381A /* Products */,
 			);
@@ -86,23 +115,6 @@
 				E7E8A3661CFC4AEB002A381A /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E7E8A37F1CFC4B61002A381A /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				E7E8A3811CFC4C91002A381A /* LTZLocalizationKit.h */,
-				E7E8A3821CFC4CE2002A381A /* LTZLocalizationManager.h */,
-				E7E8A3831CFC4CE2002A381A /* LTZLocalizationManager.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		E7E8A3801CFC4B67002A381A /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,10 +187,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7E8A3841CFC4CE2002A381A /* LTZLocalizationManager.m in Sources */,
+				E7BD57B21CFC4DF2008F2D69 /* LTZLocalizationManager.m in Sources */,
 				E7E8A36D1CFC4AEB002A381A /* ViewController.m in Sources */,
 				E7E8A36A1CFC4AEB002A381A /* AppDelegate.m in Sources */,
 				E7E8A3671CFC4AEB002A381A /* main.m in Sources */,
+				E7BD57BB1CFD7D64008F2D69 /* NSObject+localization.m in Sources */,
 				E7E8A3731CFC4AEB002A381A /* LTZLocalizationKitDemo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,6 +203,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				E7E8A36F1CFC4AEB002A381A /* Base */,
+				E7BD57B31CFC5310008F2D69 /* zh-Hans */,
+				E7BD57B51CFC5317008F2D69 /* zh-Hant */,
+				E7BD57B81CFC60CB008F2D69 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -198,6 +214,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				E7E8A3771CFC4AEB002A381A /* Base */,
+				E7BD57B41CFC5310008F2D69 /* zh-Hans */,
+				E7BD57B61CFC5317008F2D69 /* zh-Hant */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -242,7 +260,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -280,7 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -330,6 +348,7 @@
 				E7E8A37E1CFC4AEB002A381A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
