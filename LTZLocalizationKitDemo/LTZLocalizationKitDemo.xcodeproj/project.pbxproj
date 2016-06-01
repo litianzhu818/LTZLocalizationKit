@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E7BD57B21CFC4DF2008F2D69 /* LTZLocalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BD57B01CFC4DF2008F2D69 /* LTZLocalizationManager.m */; };
-		E7BD57BB1CFD7D64008F2D69 /* NSObject+localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BD57BA1CFD7D64008F2D69 /* NSObject+localization.m */; };
+		E7BD57BE1CFECEAF008F2D69 /* NSObject+localization.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BD57BD1CFECEAF008F2D69 /* NSObject+localization.m */; };
 		E7E8A3671CFC4AEB002A381A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E8A3661CFC4AEB002A381A /* main.m */; };
 		E7E8A36A1CFC4AEB002A381A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E8A3691CFC4AEB002A381A /* AppDelegate.m */; };
 		E7E8A36D1CFC4AEB002A381A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E8A36C1CFC4AEB002A381A /* ViewController.m */; };
@@ -27,8 +27,8 @@
 		E7BD57B51CFC5317008F2D69 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
 		E7BD57B61CFC5317008F2D69 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		E7BD57B81CFC60CB008F2D69 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		E7BD57B91CFD7D64008F2D69 /* NSObject+localization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+localization.h"; sourceTree = "<group>"; };
-		E7BD57BA1CFD7D64008F2D69 /* NSObject+localization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+localization.m"; sourceTree = "<group>"; };
+		E7BD57BC1CFECEAF008F2D69 /* NSObject+localization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+localization.h"; sourceTree = "<group>"; };
+		E7BD57BD1CFECEAF008F2D69 /* NSObject+localization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+localization.m"; sourceTree = "<group>"; };
 		E7E8A3621CFC4AEB002A381A /* LTZLocalizationKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LTZLocalizationKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7E8A3661CFC4AEB002A381A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E7E8A3681CFC4AEB002A381A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,8 +59,6 @@
 				E7BD57AE1CFC4DF2008F2D69 /* LTZLocalizationKit.h */,
 				E7BD57AF1CFC4DF2008F2D69 /* LTZLocalizationManager.h */,
 				E7BD57B01CFC4DF2008F2D69 /* LTZLocalizationManager.m */,
-				E7BD57B91CFD7D64008F2D69 /* NSObject+localization.h */,
-				E7BD57BA1CFD7D64008F2D69 /* NSObject+localization.m */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -95,6 +93,8 @@
 		E7E8A3641CFC4AEB002A381A /* LTZLocalizationKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E7BD57BC1CFECEAF008F2D69 /* NSObject+localization.h */,
+				E7BD57BD1CFECEAF008F2D69 /* NSObject+localization.m */,
 				E7E8A3681CFC4AEB002A381A /* AppDelegate.h */,
 				E7E8A3691CFC4AEB002A381A /* AppDelegate.m */,
 				E7E8A36B1CFC4AEB002A381A /* ViewController.h */,
@@ -187,11 +187,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7BD57BE1CFECEAF008F2D69 /* NSObject+localization.m in Sources */,
 				E7BD57B21CFC4DF2008F2D69 /* LTZLocalizationManager.m in Sources */,
 				E7E8A36D1CFC4AEB002A381A /* ViewController.m in Sources */,
 				E7E8A36A1CFC4AEB002A381A /* AppDelegate.m in Sources */,
 				E7E8A3671CFC4AEB002A381A /* main.m in Sources */,
-				E7BD57BB1CFD7D64008F2D69 /* NSObject+localization.m in Sources */,
 				E7E8A3731CFC4AEB002A381A /* LTZLocalizationKitDemo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
