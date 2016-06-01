@@ -24,6 +24,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    [LTZLocalizationManager sharedManager].localStringDictionary = @{
+                                                                     CHINESE:@{
+                                                                                @"title":@"测试",
+                                                                                @"btn_title":@"切换"
+                                                                             },
+                                                                     ENGLISH:@{
+                                                                             @"title":@"test123",
+                                                                             @"btn_title":@"change"
+                                                                             }
+                                                                     };
+    [LTZLocalizationManager sharedManager].localizationType = LTZLocalizationTypeDictionary;
+    
     self.title = LTZLocalizedStringFromTable(@"title", @"Main", nil);
     [self.changeButton setTitle: LTZLocalizedStringFromTable(@"btn_title", @"Main", nil) forState:UIControlStateNormal];
     [self.changeButton setTitle: LTZLocalizedStringFromTable(@"btn_title", @"Main", nil) forState:UIControlStateHighlighted];
