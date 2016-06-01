@@ -69,7 +69,11 @@ NSString *const LTZLocalizationKitLanguageDidChangedKey = @"LTZLocalizationKit_L
 {
     if ([[LTZLocalizationManager sharedManager] localizationType] == LTZLocalizationTypeDictionary) {
         NSString *languageKey = [LTZLocalizationManager language];
-        return [LTZLocalizationManager sharedManager].localStringDictionary[languageKey][key];
+        NSString *displayString = [LTZLocalizationManager sharedManager].localStringDictionary[languageKey][key];
+        if (!displayString) {
+            displayString = key;
+        }
+        return displayString;
     }
     return [[[LTZLocalizationManager sharedManager] bundle] localizedStringForKey:key value:value table:table];
 }
